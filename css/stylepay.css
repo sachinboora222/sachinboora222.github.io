@@ -1,0 +1,129 @@
+/*-----------------------------------
+BASIC CODE
+------------------------------------*/
+
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    */
+
+
+
+@media only screen and (max-width: 37.5em) {
+    body {
+        background-color: rgba(153,153,153,.2);
+    }    
+}   
+
+
+/*-----------------------------------
+MAIN NAV
+------------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------------
+STYLE CONTACT
+------------------------------------*/
+
+
+/*-----------------------------------
+STYLE FOOTER
+------------------------------------*/
+
+footer {
+    width: 100%;
+    background-color: rgb(129, 123, 123);
+}
+
+.link-footer {
+    float: left;
+    margin-top: 20px;
+}
+
+.sociallink-footer {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+.link-footer li,
+.sociallink-footer li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.copyright{
+    text-align: center;
+    padding: 80px 0 50px 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.sociallink-footer li a i{
+    font-size: 150%;
+}
+
+.link-footer li a:link,
+.link-footer li a:visited,
+.sociallink-footer li a:link,
+.sociallink-footer li a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s all;
+    font-size: 150%;
+}
+
+.link-footer li a:hover,.sociallink-footer li a:hover{
+    color: rgb(172, 217, 223);
+}
+
+
+@media only screen and (max-width: 500px) {
+    .flex-cont>div {
+        width: 86%;
+        margin: 7%;
+    }
+
+    html,
+    body {
+        font-size: 15px;
+    }
+
+    .btn-div a:link,
+    .btn-div a:visited {
+        padding: 15px;
+    }
+
+    .link-footer {
+        float: none;
+    }
+
+    .sociallink-footer {
+        float: none;
+        margin-right: 0;
+    }
+
+    .copyright{
+        text-align: left;
+        padding: 30px 0 50px 0;
+    }
+
+    .btn-div{
+        margin-bottom: 40px;
+    }
+
+
+}

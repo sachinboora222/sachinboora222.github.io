@@ -1,0 +1,46 @@
+.header {
+    //background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.60), rgba($color-grey-light-2, 0.60)), url(../img/interface_1.jpg);
+    height: 100vh;
+    //background-size: cover;
+    //background-position: right;
+    // clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+    position: relative;
+    border: .5rem solid $color-primary;
+    border-bottom-width: 0rem;
+
+    @include respond(phone) {
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.60), rgba($color-grey-light-2, 0.60)), url(../img/interface_1.jpg);
+        background-size: cover;
+        background-position: right;
+        border: none;
+        border-radius: 0;
+        clip-path: none;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: .75rem;
+        left: 2rem;
+    }
+
+    &__logo {
+        height: 12rem;
+
+        @include respond(phone) {
+            height: 5rem;
+        }
+    }
+
+    &__text-box {
+        opacity: .6;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        text-align: center;
+
+        @include respond(phone) {
+            opacity: 1;        }
+    }
+}

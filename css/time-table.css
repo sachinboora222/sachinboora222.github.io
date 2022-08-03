@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    font-family: "Poppins";
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 2px 10px 10px rgba(70, 70, 70, 0.4);
+}
+
+table, th, tr, td{
+    /* border: 1px solid black; */
+    /* border: 1px solid #707371; */
+    border: 1px solid #9ea09f;
+    border-collapse: collapse;
+}
+
+tr:nth-child(1){
+    font-style:italic;
+}
+
+tr:nth-child(1),
+tr:nth-child(2){
+    font-weight: bold;
+}
+
+td, th{
+    text-align: center;
+    padding: 4px;
+}
+
+td{
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.second-lb{
+    border-top: 1p
+}

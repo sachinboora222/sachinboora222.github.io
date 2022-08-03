@@ -1,0 +1,427 @@
+.events-box {
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 25rem;
+    border-radius: .5rem;
+    box-shadow: 0 5px 10px rgb(29, 28, 28);
+    z-index: 1;
+    transition: all .4s ease-in-out;
+    color: rgb(216, 208, 208);
+    font-weight: bolder;
+
+    @include respond(phone) {
+        width: 35rem;
+        transition: none;
+    }
+
+    & h3 {
+        transform: translateY(200%);
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        margin-top: 1.7rem;
+        transition: all .4s ease-in-out;
+
+
+        @include respond(phone) {
+            transform: translateY(10%);
+        }
+    }
+
+    & p {
+        letter-spacing: 2px;
+        line-height: 27px;
+        text-align: center;
+        transition: all .4s ease-in-out;
+        transform: translateY(200%);
+        opacity: 0;
+
+        @include respond(phone) {
+            transform: translateY(40%);
+            opacity: 1;
+        }
+    }
+
+    &__img--1 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/ep.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/ep.png') no-repeat left, url('../../img/brochure/tech/ep1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/ep.png') no-repeat left, url('../../img/brochure/tech/ep1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--2 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/gd.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/gd.png') no-repeat left, url('../../img/brochure/tech/gd1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            @include respond(phone) {
+                background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/gd.png') no-repeat left, url('../../img/brochure/tech/gd1.png') no-repeat right;
+                background-size: contain;
+                transform: scale(.8);
+                margin-bottom: 0rem;
+                margin-left: -2.5rem;
+            }
+        }
+    }
+
+    &__img--3 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/hack.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/hack.png') no-repeat left, url('../../img/brochure/tech/hack1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/hack.png') no-repeat left, url('../../img/brochure/tech/hack1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--4 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/IOT.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/IOT.png') no-repeat left, url('../../img/brochure/tech/IOT1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/IOT.png') no-repeat left, url('../../img/brochure/tech/IOT1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--5 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/itquiz.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/itquiz.png') no-repeat left, url('../../img/brochure/tech/itquiz1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/itquiz.png') no-repeat left, url('../../img/brochure/tech/itquiz1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--6 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/tagcoding.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/tagcoding.png') no-repeat left, url('../../img/brochure/tech/tagcoding1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/tagcoding.png') no-repeat left, url('../../img/brochure/tech/tagcoding1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--7 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/wd.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/wd.png') no-repeat left, url('../../img/brochure/tech/wd1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/tech/wd.png') no-repeat left, url('../../img/brochure/tech/wd1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--8 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/btm.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/btm.png') no-repeat left, url('../../img/brochure/non_tech/btm1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/btm.png') no-repeat left, url('../../img/brochure/non_tech/btm1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--9 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/event.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/event.png') no-repeat left, url('../../img/brochure/non_tech/event1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/event.png') no-repeat left, url('../../img/brochure/non_tech/event1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--10 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/gaming.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/gaming.png') no-repeat left, url('../../img/brochure/non_tech/gaming1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/gaming.png') no-repeat left, url('../../img/brochure/non_tech/gaming1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--11 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/mun.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/mun.png') no-repeat left, url('../../img/brochure/non_tech/mun1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/mun.png') no-repeat left, url('../../img/brochure/non_tech/mun1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--12 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/pv.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/pv.png') no-repeat left, url('../../img/brochure/non_tech/pv1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/pv.png') no-repeat left, url('../../img/brochure/non_tech/pv1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &__img--13 {
+        background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/th.png') no-repeat center;
+        background-size: contain;
+
+        @include respond(tab-land) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/th.png') no-repeat left, url('../../img/brochure/non_tech/th1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(1.3);
+        }
+
+        @include respond(phone) {
+            background: linear-gradient( to right bottom, rgba($color-black,.2), rgba($color-black,.2)), url('../../img/brochure/non_tech/th.png') no-repeat left, url('../../img/brochure/non_tech/th1.png') no-repeat right;
+            background-size: contain;
+            transform: scale(.8);
+            margin-bottom: 0rem;
+            margin-left: -2.5rem;
+        }
+    }
+
+    &:hover {
+        @media only screen and (min-width: 75rem) { // 1200px
+            transform: scale(1.1);
+            color: rgb(226, 222, 222);
+            box-shadow: 0 5px 7px rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+    }
+
+    &:hover h3 {
+        @include checkHover() {
+            transform: translateY(0%);
+        }
+
+        @include respond(phone) {
+            transform: translateY(10%);
+        }
+    }
+
+    &:hover p {
+        @include checkHover() {
+            display: block;
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+        @include respond(phone) {
+            transform: translateY(40%);
+        }
+    }
+
+    &__img--1:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/ep1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--2:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/gd1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--3:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/hack1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--4:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/IOT1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--5:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/itquiz1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--6:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/tagcoding1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--7:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/tech/wd1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--8:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/non_tech/btm1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--9:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/non_tech/event1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--10:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/non_tech/gaming1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--11:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/non_tech/mun1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--12:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/non_tech/pv1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__img--13:hover {
+        @media only screen and (min-width: 75rem) {
+            background: linear-gradient( to right bottom, rgba($color-black,.1), rgba($color-black,.1)), url('../../img/brochure/non_tech/th1.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+}

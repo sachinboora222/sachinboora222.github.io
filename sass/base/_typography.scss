@@ -1,0 +1,90 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-text-grey;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 3rem;
+
+
+    &--main {
+        font-size: 4rem;
+        font-weight: 400;
+        display: block;
+        letter-spacing: .25rem;
+        animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            letter-spacing: .15rem;
+        }
+
+        &__festName {
+            display: none;
+
+            @include respond(phone) {
+                display: block;
+            }
+        }
+    }
+
+    &--sub {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+        letter-spacing: .15rem;
+        animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+            letter-spacing: .05rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    display: inline-block;
+    color: transparent;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        @include checkHover() {
+            transform: scale(1.5);
+            text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+        }
+
+        @include respond(phone) {
+            transform: none;
+            text-shadow: none;
+        }
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,43 @@
+.updates {
+    height: 100%;
+    padding: 2rem;
+    background-color: $color-primary-dark;
+    position: relative;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;    
+
+    @include respond(phone) {
+        border-radius: 0px;
+    }
+
+    &__title {
+        padding: 1rem;
+        color: $color-primary-dark;
+        background-color: $color-grey-light-1;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    &__list {
+        padding: 2rem;
+        list-style-type: none;
+
+        &__item {
+            padding: 1rem;
+            color: $color-grey-light-2;
+            font-size: 1rem;
+               
+            &--date {
+                display: block;
+                font-style: oblique;
+                font-weight: 700;
+            }
+
+            &--link {
+                font-weight: 400;
+                color: $color-grey-light-2;
+                text-decoration: none;
+            }
+        }
+    }
+}

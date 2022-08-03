@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    font-family: "Poppins";
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 7px rgba(50, 50, 50, 0.5);
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(1){
+    font-style:italic;
+}
+
+tr:nth-child(1),
+tr:nth-child(2){
+    font-weight: bold;
+}
+
+td, th{
+    text-align: center;
+    padding: 4px;
+}
+
+td{
+    font-weight: bold;
+}

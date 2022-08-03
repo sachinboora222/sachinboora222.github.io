@@ -1,0 +1,108 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        text-decoration: none;
+        transition: all 0.2s;
+        position: relative;
+        font-size: 1.6rem;
+        border: none;
+        cursor: pointer;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        @include checkHover() {
+            transform: translateY(-.3rem);
+            box-shadow: 0rem 1rem 2rem rgba($color-black, 0.20);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0rem .5rem 1rem rgba($color-black, 0.20);
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-text-grey;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .4s;
+        z-index: -1;
+    }
+
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        display: inline-block;
+        padding: 3px;
+        text-decoration: none;
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+        transition: all .2s;
+    }
+
+    &:hover {
+        @include checkHover() {
+            background-color: $color-primary;
+            color: $color-white;
+            transform: translateY(-2px);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+        }
+    }
+
+    &:active {
+        background-color: $color-primary;
+        color: $color-white;
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.15);
+    }
+}

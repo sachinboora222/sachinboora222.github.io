@@ -1,0 +1,16 @@
+.inst {
+    width: 80%;
+    margin: 0 auto;
+
+    &__row {
+        width: 114rem;
+        margin: 0 auto;
+    }
+
+    &__instructions {
+        li {
+            margin: 10px;
+            list-style: circle;
+        }
+    }
+}

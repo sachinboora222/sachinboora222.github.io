@@ -1,0 +1,18 @@
+.socialMedia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__item {
+	}
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__icon {
+		color: $color-grey-light-2;
+		font-size: 3rem;
+		margin: 1rem;
+	}
+}
